@@ -100,3 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="ls -la"
+alias n="nvim"
+
+# zoxide alias
+eval "$(zoxide init zsh --cmd cd)"
