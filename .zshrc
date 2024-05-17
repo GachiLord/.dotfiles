@@ -75,6 +75,7 @@ plugins=(
   rust
   python
   npm
+  # Disable because slow down zsh startup
   # zsh-autosuggestions
   # zsh-syntax-highlighting
   # fast-syntax-highlighting
