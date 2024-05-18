@@ -114,3 +114,8 @@ alias n="nvim"
 alias t="tmux new -A"
 # zoxide alias
 eval "$(zoxide init zsh --cmd cd)"
+# Run 'fff' with 'f' or whatever you decide to name the function.
+f() {
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
