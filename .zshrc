@@ -111,6 +111,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="ls -la"
 alias n="nvim"
-
+alias t="tmux new -A"
 # zoxide alias
 eval "$(zoxide init zsh --cmd cd)"
