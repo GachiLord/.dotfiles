@@ -59,6 +59,10 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
+# make screenshot using coreshot
+bindsym Print exec coreshot -f
+
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
