@@ -66,14 +66,14 @@ bindsym Print exec coreshot -f
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start pffs
+bindsym $mod+F1 exec pffs
+
 # start a browser
 bindsym $mod+F2 exec firefox
 
 # start telegram
 bindsym $mod+F3 exec telegram-desktop
-
-# start pffs
-bindsym $mod+F4 exec pffs
 
 # kill focused window
 bindsym $mod+Shift+q kill
