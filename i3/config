@@ -72,6 +72,9 @@ bindsym $mod+F2 exec firefox
 # start telegram
 bindsym $mod+F3 exec telegram-desktop
 
+# start pffs
+bindsym $mod+F4 exec pffs
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
