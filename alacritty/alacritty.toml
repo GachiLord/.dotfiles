@@ -5,3 +5,6 @@ normal = { family = "Agave Nerd Font", style = "Regular" }
 bindings = [
   { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]
+
+[mouse]
+hide_when_typing = true
