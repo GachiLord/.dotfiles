@@ -4,7 +4,7 @@ normal = { family = "Agave Nerd Font", style = "Regular" }
 [keyboard]
 bindings = [
   { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
-  { key = "D", mods = "Control", action = "ResetFontSize" }
+  { key = "D", mods = "Control|Shift", action = "ResetFontSize" }
 ]
 
 [mouse]
