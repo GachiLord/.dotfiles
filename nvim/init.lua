@@ -2,3 +2,4 @@
 require("config.lazy")
 require("xkbswitch").setup()
 require("hex").setup()
+vim.cmd("set iskeyword-=_")
