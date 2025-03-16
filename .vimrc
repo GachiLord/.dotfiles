@@ -9,8 +9,8 @@ set autoindent
 set smartindent
 
 " Set tab width to 4 spaces
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " Enable mouse support
