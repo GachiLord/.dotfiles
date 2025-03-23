@@ -119,8 +119,10 @@ export LANG=en_US.UTF-8
 alias l="ls -la"
 alias n="nvim"
 alias t="tmux new -A"
-alias lock="loginctl lock-session";
-alias led="g213-led -a 00ff00";
+alias lock="loginctl lock-session"
+alias led="g213-led -a 00ff00"
+alias shutdown="/sbin/shutdown"
+alias reboot="/sbin/reboot"
 # zoxide alias
 eval "$(zoxide init zsh --cmd cd)"
 # Run 'fff' with 'f' or whatever you decide to name the function.
