@@ -19,6 +19,9 @@ set mouse=a
 " Set the color scheme
 colorscheme unokai
 
+" Set tree-view in file manager 
+let g:netrw_liststyle = 3
+
 " Add tabs mappings
 nmap <C-H> :tabprev <CR>
 nmap <C-L> :tabnext <CR>
