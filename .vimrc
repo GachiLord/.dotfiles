@@ -4,9 +4,12 @@ set number
 " Enable syntax highlighting
 syntax on
 
+" Allow jump between unwritten buffers
+set hidden
+
 " Enable auto indents
 set autoindent
-set smartindent
+" set smartindent
 
 " Set tab width to 4 spaces
 set tabstop=2
