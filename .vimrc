@@ -14,7 +14,7 @@ set autoindent
 " Set tab width to 4 spaces
 set tabstop=2
 set shiftwidth=2
-set expandtab
+" set expandtab
 
 " Enable mouse support
 set mouse=a
