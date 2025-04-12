@@ -52,6 +52,9 @@ bindsym XF86AudioStop exec playerctl stop
 # audio applet
 exec --no-startup-id pasystray 
 
+# flameshot applet
+exec --no-startup-id flameshot
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 

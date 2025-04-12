@@ -14,7 +14,10 @@ set autoindent
 " Set tab width to 4 spaces
 set tabstop=2
 set shiftwidth=2
-" set expandtab
+set expandtab
+
+" Fix makefiles' tabs
+:autocmd FileType make set noexpandtab
 
 " Enable mouse support
 set mouse=a
