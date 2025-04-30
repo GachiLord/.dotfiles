@@ -16,6 +16,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+" set escape-time for normal usage
+set timeoutlen=10
+
 " Fix makefiles' tabs
 :autocmd FileType make set noexpandtab
 
