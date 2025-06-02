@@ -12,9 +12,13 @@ set autoindent
 " set smartindent
 
 " Set tab width to 4 spaces
+set expandtab
 set tabstop=2
 set shiftwidth=2
-set expandtab
+
+" Show tabs as special chars
+set list
+set listchars=tab:>-
 
 " set escape-time for normal usage
 set timeoutlen=10
