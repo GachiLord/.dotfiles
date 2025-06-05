@@ -1,5 +1,36 @@
--- bootstrap lazy.nvim, LazyVim and your plugins
-require("config.lazy")
-require("xkbswitch").setup()
-require("hex").setup()
-vim.cmd("set iskeyword-=_")
+-- Enable line numbers
+vim.wo.relativenumber = true
+vim.wo.number = true
+
+-- Enable auto indents
+vim.opt.autoindent = true
+
+-- Set tab width to 2 spaces
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
+-- Show tabs as special chars
+vim.opt.list = true
+vim.opt.listchars = { tab = '>-' }
+
+-- Fix makefiles' tabs
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = 'make',
+  callback = function(ev)
+    vim.opt.list = false
+    vim.opt.expandtab = false
+  end
+})
+
+-- Set tree-view in file manager 
+vim.g.netrw_liststyle = 3
+
+-- Add tabs mappings
+vim.api.nvim_set_keymap('n', '<C-H>', ':tabprev <CR>', {})
+vim.api.nvim_set_keymap('n', '<C-L>', ':tabnext <CR>', {})
+
+-- Add buffer mappings
+vim.api.nvim_set_keymap('n', '<C-J>', ':bp <CR>', {})
+vim.api.nvim_set_keymap('n', '<C-K>', ':bn <CR>', {})
+
