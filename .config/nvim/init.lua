@@ -14,9 +14,9 @@ vim.opt.shiftwidth = 2
 vim.opt.list = true
 vim.opt.listchars = { tab = '>-' }
 
--- Fix makefiles' tabs
+-- use tabs in some languages
 vim.api.nvim_create_autocmd({'FileType'}, {
-  pattern = 'make',
+  pattern = {'make', 'go'},
   callback = function(ev)
     vim.opt.list = false
     vim.opt.expandtab = false
