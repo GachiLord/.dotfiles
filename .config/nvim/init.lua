@@ -23,6 +23,9 @@ vim.api.nvim_create_autocmd({'FileType'}, {
   end
 })
 
+-- set color scheme
+vim.cmd("colorscheme sorbet")
+
 -- Set tree-view in file manager 
 vim.g.netrw_liststyle = 3
 
