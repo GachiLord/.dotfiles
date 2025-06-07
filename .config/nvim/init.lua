@@ -47,3 +47,8 @@ vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = 'Telescope 
 vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Telescope buffers' })
 
+
+-- marks
+
+local marks = require('marks')
+marks.setup()
