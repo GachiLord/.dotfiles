@@ -26,8 +26,15 @@ vim.api.nvim_create_autocmd({'FileType'}, {
 -- set color scheme
 vim.cmd("colorscheme sorbet")
 
--- Set tree-view in file manager 
+-- tree-view 
 vim.g.netrw_liststyle = 3
+
+vim.api.nvim_create_autocmd({'FileType'}, {
+  pattern = {'netrw'},
+  callback = function(ev)
+    vim.cmd('set relativenumber')
+  end
+})
 
 -- set leader
 vim.g.mapleader = " "
@@ -39,6 +46,19 @@ vim.api.nvim_set_keymap('n', '<C-L>', ':tabnext <CR>', {})
 -- Add buffer mappings
 vim.api.nvim_set_keymap('n', '<C-J>', ':bp <CR>', {})
 vim.api.nvim_set_keymap('n', '<C-K>', ':bn <CR>', {})
+vim.api.nvim_set_keymap('n', '<leader>e', ':e. <CR>', {})
+vim.keymap.set(
+  'n', 
+  '<leader>d', 
+  function()
+    vim.bo.buflisted = false
+    vim.api.nvim_buf_delete(0, { unload = false })
+  end,
+  {}
+)
+
+-- search highlight mapping
+vim.api.nvim_set_keymap('n', ',', ':noh <CR>', {})
 
 -- telescope
 
