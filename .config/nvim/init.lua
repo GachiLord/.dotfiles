@@ -63,6 +63,7 @@ vim.api.nvim_set_keymap('n', ',', ':noh <CR>', {})
 -- telescope
 
 local builtin = require('telescope.builtin')
+local path = require "plenary.path"
 
 vim.keymap.set('n', '<leader><leader>', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>g', builtin.live_grep, { desc = 'Telescope live grep' })
@@ -71,7 +72,7 @@ vim.keymap.set(
   '<leader>s', 
   function()
     builtin.grep_string({
-      additional_args = { '-g', '!' .. vim.fn.expand("%") }
+      additional_args = { '-g', '!' .. path:new(vim.fn.expand('%')):make_relative(vim.fn.getcwd()) }
     })
   end,
   { desc = 'Telescope grep string' }
