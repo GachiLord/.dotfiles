@@ -57,6 +57,9 @@ vim.keymap.set(
   {}
 )
 
+-- copy whole buffer mapping
+vim.api.nvim_set_keymap('n', '<leader>y', 'gg"+yG', {})
+
 -- search highlight mapping
 vim.api.nvim_set_keymap('n', ',', ':noh <CR>', {})
 
