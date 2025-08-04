@@ -112,6 +112,8 @@ export LANG=en_US.UTF-8
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
+bindkey '^E' beginning-of-line
+bindkey '^A' end-of-line
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
