@@ -1,3 +1,6 @@
+-- use system clipboard for yanking
+vim.opt.clipboard = 'unnamedplus'
+
 -- Enable line numbers
 vim.wo.relativenumber = true
 vim.wo.number = true
