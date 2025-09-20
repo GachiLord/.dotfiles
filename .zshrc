@@ -137,3 +137,9 @@ f() {
     fff "$@"
     cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
+
+# date since
+
+start_date=$(cat ~/startdate.txt)
+date_diff=$(( ($(date +%s) - $start_date) / (60*60*24) ))
+echo "I haven't been doing stupid stuff for \033[31;1;1m$date_diff\033[0m days"
