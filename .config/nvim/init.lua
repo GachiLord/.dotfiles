@@ -89,3 +89,13 @@ vim.keymap.set('n', '<leader>b', builtin.buffers, { desc = 'Telescope buffers' }
 
 local marks = require('marks')
 marks.setup()
+
+-- sessions
+
+vim.o.sessionoptions = "blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
+local session = require("auto-session")
+session.setup({
+  suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" }
+})
+
