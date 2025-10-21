@@ -82,7 +82,7 @@ bindsym $mod+F1 exec pffs
 bindsym $mod+F2 exec $BROWSER
 
 # start telegram
-bindsym $mod+F3 exec telegram-desktop
+bindsym $mod+F3 exec Telegram
 
 # start files
 bindsym $mod+F4 exec nautilus
