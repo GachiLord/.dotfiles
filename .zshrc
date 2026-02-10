@@ -125,7 +125,8 @@ bindkey '^E' end-of-line
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias l="ls -la"
 alias n="nvim"
-alias t="tmux new -A"
+alias t='tmux new -s "$(basename $PWD)"'
+alias ta='tmux attach'
 alias lock="loginctl lock-session"
 alias led="g213-led -a 00ff00"
 alias shutdown="/sbin/shutdown"
